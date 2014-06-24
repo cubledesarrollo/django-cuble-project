@@ -271,3 +271,49 @@ INSTALLED_APPS += (
 # Don't need to use South when setting up a test database.
 SOUTH_TESTS_MIGRATE = False
 ########## END SOUTH CONFIGURATION
+
+########## PIPELINE CONFIGURATION
+INSTALLED_APPS += (
+    'pipeline',
+)
+
+PIPELINE_COMPILERS = (
+    'pipeline.compilers.less.LessCompiler',
+    'pipeline.compilers.coffee.CoffeeScriptCompiler',
+)
+
+PIPELINE_CSS = {
+    'project_name': {
+        'source_filenames': (
+            'css/project_name.less',
+        ),
+        'output_filename': 'css/project_name.css',
+        'extra_context': {
+            'media': 'screen,projection',
+        },
+    }
+}
+
+PIPELINE_JS = {
+    'vendor': {
+        'source_filenames': (
+            'vendor/bootstrap/dist/js/bootstrap.js',
+        ),
+        'output_filename': 'js/vendor.js',
+    },
+    'project_name': {
+        'source_filenames': (
+            'js/*.coffee',
+        ),
+        'output_filename': 'js/project_name.js'
+    }
+}
+
+PIPELINE_LESS_ARGUMENTS = '-x --yui-compress'
+
+PIPELINE_JS_COMPRESSOR = 'pipeline.compressors.yuglify.YuglifyCompressor'
+
+PIPELINE_YUGLIFY_JS_ARGUMENTS = '--terminal'
+
+STATICFILES_STORAGE = 'pipeline.storage.PipelineStorage'
+########## END PIPELINE CONFIGURATION

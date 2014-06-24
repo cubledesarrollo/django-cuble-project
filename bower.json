@@ -1,0 +1,20 @@
+{
+  "name": "project_name",
+  "version": "0.0.0",
+  "homepage": "https://github.com/cubledesarrollo/project_name",
+  "authors": [
+    "Cuble Desarrollo <info@cuble.es>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "btp/static/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.1.1"
+  }
+}
