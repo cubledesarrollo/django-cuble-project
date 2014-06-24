@@ -271,3 +271,10 @@ INSTALLED_APPS += (
 # Don't need to use South when setting up a test database.
 SOUTH_TESTS_MIGRATE = False
 ########## END SOUTH CONFIGURATION
+
+########## GEOIP CONFIGURATION
+REMOTE_ADDR_ATTR = 'REMOTE_ADDR'
+# San Francisco: (37.7352, -122.4258)
+# Valencia: (39.4742, -0.3782)
+DEFAULT_GEOIP_PINT = (39.4742, -0.3782)
+########## END GEOIP CONFIGURATION
