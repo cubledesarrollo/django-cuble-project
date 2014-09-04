@@ -298,3 +298,4 @@ STATICFILES_STORAGE = 'pipeline.storage.PipelineStorage'
 ########## TEST CONFIGURATION
 TEST_RUNNER = 'django.test.runner.DiscoverRunner'
 ########## END TEST CONFIGURATION
+
