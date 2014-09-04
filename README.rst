@@ -35,7 +35,7 @@ added to the path. Adding the project directory will allow `django-admin.py` to
 be able to change settings using the `--settings` flag.
 
 Virtualenv with virtualenvwrapper
-------------------------------------
+---------------------------------
 
 In Linux and Mac OSX, you can install virtualenvwrapper (http://virtualenvwrapper.readthedocs.org/en/latest/),
 which will take care of managing your virtual environments and adding the
@@ -46,7 +46,7 @@ project path to the `site-directory` for you::
     $ cd potato && add2virtualenv `pwd`
 
 Using virtualenvwrapper with Windows
-----------------------------------------
+------------------------------------
 
 There is a special version of virtualenvwrapper for use with Windows (https://pypi.python.org/pypi/virtualenvwrapper-win).::
 
@@ -71,7 +71,7 @@ django-twoscoops-project, run the following command::
     $ django-admin.py startproject --template=https://github.com/cubledesarrollo/django-cuble-project/archive/master.zip --extension=py,rst,html potato_project
 
 Installation of Dependencies
-=============================
+============================
 
 Depending on where you are installing dependencies:
 
