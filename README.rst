@@ -66,7 +66,7 @@ Creating your project
 =====================
 
 To create a new Django project called '**potato**' using
-django-twoscoops-project, run the following command::
+django-cuble-project, run the following command::
 
     $ django-admin.py startproject --template=https://github.com/cubledesarrollo/django-cuble-project/archive/master.zip --extension=py,rst,html potato_project
 
