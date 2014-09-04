@@ -2,7 +2,7 @@
 django-cuble-project
 ====================
 
-A project template for Django 1.6.
+A project template for Django 1.7.
 
 To use this project follow these steps:
 
