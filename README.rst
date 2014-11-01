@@ -68,7 +68,7 @@ Creating your project
 To create a new Django project called '**potato**' using
 django-cuble-project, run the following command::
 
-    $ django-admin.py startproject --template=https://github.com/theroomofcode/django-theroomofcode-project/archive/master.zip --extension=py,rst,html potato_project
+    $ django-admin.py startproject --template=https://github.com/theroomofcode/django-theroomofcode-project/archive/master.zip --extension=py,rst,html,less,coffee potato_project
 
 Installation of Dependencies
 ============================
