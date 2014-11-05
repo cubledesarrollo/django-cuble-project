@@ -1,6 +1,6 @@
-====================
-django-cuble-project
-====================
+============================
+django-theroomofcode-project
+============================
 
 A project template for Django 1.7.
 
